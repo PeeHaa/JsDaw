@@ -11,25 +11,5 @@
     var timerController = new JsDaw.Interface.Controller.Timer(timerModel);
     var timerView  = new JsDaw.Interface.View.Timer(ctx, clickManager, timerController);
 
-    //var timerModel = new JsDaw.Interface.Model.Timer(clock, eventManager, timerView);
-
     loop.start();
-
-    document.getElementById('start').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        timerModel.start();
-    });
-
-    document.getElementById('pause').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        timerModel.pause();
-    });
-
-    document.getElementById('stop').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        timerModel.stop();
-    });
 }(JsDaw));
