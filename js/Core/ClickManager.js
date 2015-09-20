@@ -6,7 +6,7 @@ JsDaw.Core.ClickManager = (function() {
             var handlers = this.getHandlers(e.layerX, e.layerY);
 
             handlers.forEach(function(callback) {
-                callback();
+                callback(e.layerX, e.layerY);
             });
         }.bind(this));
     }

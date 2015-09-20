@@ -31,7 +31,6 @@ JsDaw.Interface.Model.Timer = (function() {
         window.dispatchEvent(new CustomEvent('Model.Timer.ChangePlayStatus', {detail: 'stopped'}));
 
         _eventManager.add(0, function() {
-            //_gui.update(0);
             window.dispatchEvent(new CustomEvent('Model.Timer.ChangePlayProgess', {detail: 0}));
 
             _startTime   = null;
